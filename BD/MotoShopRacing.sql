@@ -50,12 +50,6 @@ CREATE TABLE tickets(
 )
 GO
 
-ALTER TABLE tickets
-ADD CONSTRAINT FK_TicUser
-FOREIGN KEY (userID)
-REFERENCES users (userID)
-GO
-
 CREATE TABLE clients(
 	clientID INT IDENTITY(1,1) NOT NULL,
 	clientFirstName VARCHAR(30) NOT NULL,
@@ -118,9 +112,15 @@ FOREIGN KEY (userID)
 REFERENCES users (userID)
 GO
 
+ALTER TABLE tickets
+ADD CONSTRAINT FK_TicUser
+FOREIGN KEY (userID)
+REFERENCES users (userID)
+GO
 
 --Tipos de fechas
 
 --select CONVERT(VARCHAR(10),GETDATE(),110) AS 'Fecha 1'
 
 --Select CONVERT(VARCHAR(19),GETDATE()) AS 'Fecha 2'
+
