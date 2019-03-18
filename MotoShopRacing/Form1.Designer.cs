@@ -59,7 +59,7 @@
             this.txtPass.Location = new System.Drawing.Point(23, 158);
             this.txtPass.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '*';
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;
             this.txtPass.SelectionStart = 0;
@@ -78,6 +78,7 @@
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // materialDivider1
             // 

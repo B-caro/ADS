@@ -22,3 +22,5 @@ C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.cs
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.CopyComplete
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.exe
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.pdb
+C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Principal.resources
+C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegProductos.resources

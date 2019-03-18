@@ -10,16 +10,8 @@ CREATE TABLE users(
 	userSecondName VARCHAR(30),
 	userLastNames VARCHAR(30) NOT NULL,
 	userRole BIT NOT NULL,	
+	pass VARCHAR(40) NOT NULL,	
 	CONSTRAINT PK_User PRIMARY KEY (userID)
-)
-GO
-
-CREATE TABLE userLogin(
-	codUser VARCHAR(6) NOT NULL,	
-	userID INT NOT NULL,	
-	userRole INT NOT NULL,
-	pass VARCHAR(40) NOT NULL,
-	CONSTRAINT PK_UserLogin PRIMARY KEY (codUser)
 )
 GO
 
@@ -100,23 +92,19 @@ FOREIGN KEY (debtID)
 REFERENCES clientsDebts (debtID)
 GO
 
-ALTER TABLE userLogin 
-ADD CONSTRAINT FK_UserL
-FOREIGN KEY (userID)
-REFERENCES users (userID) 
-GO
-
 ALTER TABLE tickets
 ADD CONSTRAINT FK_TicUser
 FOREIGN KEY (userID)
 REFERENCES users (userID)
 GO
 
-ALTER TABLE tickets
-ADD CONSTRAINT FK_TicUser
-FOREIGN KEY (userID)
-REFERENCES users (userID)
-GO
+INSERT INTO users VALUES ('ADMIN', '', ' ', 1, '123')
+
+select * from users
+
+select productID As 'ID Producto', productName As 'Nombre Producto', brand As 'Marca', quantity As 'Cantidad', price As 'Precio' from products
+
+INSERT INTO products VALUES ('', '', 0, 0)
 
 --Tipos de fechas
 
