@@ -69,5 +69,15 @@ namespace MotoShopRacing
             conexion.Close();
             return ds.Tables["Tabla"];
         }
+        public DataTable BuscarProductos(string nombre)
+        {
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand("select productID As 'ID Producto', productName As 'Nombre Producto', brand As 'Marca', quantity As 'Cantidad', price As 'Precio' from products where productName like '%" + nombre + "%'", conexion);
+            SqlDataAdapter ad = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            ad.Fill(ds, "Tablas");
+            conexion.Close();
+            return ds.Tables["Tablas"];
+        }
     }
 }

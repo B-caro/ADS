@@ -67,5 +67,12 @@ namespace MotoShopRacing
             
             //Application.Exit();
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            string name = txtBuscar.Text;
+            if (txtBuscar.Text != "") dgvPrincipal.DataSource = Sql.BuscarProductos(name);
+            else dgvPrincipal.DataSource = Sql.MostrarProductos();
+        }
     }
 }
