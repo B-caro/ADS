@@ -10,21 +10,14 @@ namespace MotoShopRacing
 {
     class BD
     {
-        private SqlConnection conexion = new SqlConnection("workstation id=MotoShopRacing.mssql.somee.com;packet size=4096;user id=Bucaro;pwd=gamesalada1;data source=MotoShopRacing.mssql.somee.com;persist security info=False;initial catalog=MotoShopRacing");
+        private SqlConnection conexion = new SqlConnection("workstation id=MotoShopRacing.mssql.somee.com;packet size=4096;" +
+            "user id=Bucaro;pwd=gamesalada1;data source=MotoShopRacing.mssql.somee.com;persist security info=False;initial catalog=MotoShopRacing");
         //private SqlConnection conexion = new SqlConnection("Data Source = BÚCARO; database = MotoShopRacing; Integrated Security = true; user = sa; password = root");
 
-        private DataSet ds;        
+        private DataSet ds;
 
-        public void Abrir()
-        {
-            conexion.Open();
-        }
-
-        public void Cerrar()
-        {
-            conexion.Close();
-        }
-
+        public void Abrir() { conexion.Open(); }
+        public void Cerrar() { conexion.Close(); }
         public Boolean iniciarSesion(string user, string pass)
         {            
             bool tipoUsuario = false;
@@ -35,20 +28,11 @@ namespace MotoShopRacing
             Comando.Parameters.Add(parUser);
             Comando.Parameters.Add(parPass);
             SqlDataReader lector = Comando.ExecuteReader();
-            while (lector.Read())
-            {
-                tipoUsuario = lector.GetBoolean(2);
-            }
+            while (lector.Read()) tipoUsuario = lector.GetBoolean(2);
             lector.Close();
             conexion.Close();
-            if (tipoUsuario == false)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            if (tipoUsuario == false) return false;
+            else return true;
         }
 
         public bool Insertar(string PNombre, string Marca, int Cantidad, double Precio)
@@ -61,16 +45,16 @@ namespace MotoShopRacing
             else return false;
         }
 
-        public DataTable Buscar(string NProduct)
-        {
-            conexion.Open();
-            SqlCommand cmd = new SqlCommand(string.Format("select productID As 'ID Producto', productName As 'Nombre Producto', brand As 'Marca', quantity As 'Cantidad', price As 'Precio' from products where productName like '%{0}%'", NProduct), conexion);
-            SqlDataAdapter ad = new SqlDataAdapter(cmd);
-            ds = new DataSet();
-            ad.Fill(ds, "Tabla");
-            conexion.Close();
-            return ds.Tables["Tabla"];
-        }
+        //public DataTable Buscar(string NProduct)
+        //{
+        //    conexion.Open();
+        //    SqlCommand cmd = new SqlCommand(string.Format("select productID As 'ID Producto', productName As 'Nombre Producto', brand As 'Marca', quantity As 'Cantidad', price As 'Precio' from products where productName like '%{0}%'", NProduct), conexion);
+        //    SqlDataAdapter ad = new SqlDataAdapter(cmd);
+        //    ds = new DataSet();
+        //    ad.Fill(ds, "Tabla");
+        //    conexion.Close();
+        //    return ds.Tables["Tabla"];
+        //}
 
         public DataTable MostrarProductos()
         {

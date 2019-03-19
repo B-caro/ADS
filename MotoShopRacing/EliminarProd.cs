@@ -53,7 +53,7 @@ namespace MotoShopRacing
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            dgvMantenimiento.DataSource = Sql.Buscar(txtBuscar.Text);
+            dgvMantenimiento.DataSource = Sql.BuscarProductos(txtBuscar.Text);
         }
 
         private void EliminarProd_Load(object sender, EventArgs e)
