@@ -18,7 +18,6 @@ namespace MotoShopRacing
         public RegVenta()
         {
             InitializeComponent();
-            InitializeComponent();
             // Create a material theme manager and add the form to manage(this)
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
@@ -30,7 +29,7 @@ namespace MotoShopRacing
                 Primary.Blue500, Accent.LightBlue200,
                 TextShade.WHITE
             );
-            dgvMantenimiento.DataSource = Sql.MostrarProductos();
+            //dgvMantenimiento.DataSource = Sql.MostrarProductos();
         }
     }
 }
