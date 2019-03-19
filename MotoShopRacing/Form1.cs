@@ -66,9 +66,6 @@ namespace MotoShopRacing
                 MessageBox.Show("Complete los datos");
                 txtUser.Focus();
             }
-            //Principal frmPrincipal = new Principal();
-            //this.Hide();
-            //frmPrincipal.Show();
         }
 
         public void Reset()
@@ -79,6 +76,13 @@ namespace MotoShopRacing
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void cbRecordarme_CheckedChanged(object sender, EventArgs e)
+        {
+            Principal frmPrincipal = new Principal();
+            this.Hide();
+            frmPrincipal.Show();
         }
     }
 }

@@ -20,7 +20,7 @@ CREATE TABLE products(
 	productName VARCHAR(75) NOT NULL,
 	brand VARCHAR(30),
 	quantity INT NOT NULL,
-	price INT NOT NULL,
+	price DOUBLE NOT NULL,
 	CONSTRAINT PK_Product PRIMARY KEY (productID) 
 )
 GO

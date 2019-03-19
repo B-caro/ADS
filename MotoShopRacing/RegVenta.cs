@@ -15,6 +15,7 @@ namespace MotoShopRacing
     public partial class RegVenta : MaterialForm
     {
         BD Sql = new BD();
+
         public RegVenta()
         {
             InitializeComponent();
@@ -29,7 +30,14 @@ namespace MotoShopRacing
                 Primary.Blue500, Accent.LightBlue200,
                 TextShade.WHITE
             );
-            //dgvMantenimiento.DataSource = Sql.MostrarProductos();
+            dgvVenta.DataSource = Sql.MostrarProductos();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Principal frmPrin = new Principal();
+            this.Close();
+            frmPrin.Show();
         }
     }
 }

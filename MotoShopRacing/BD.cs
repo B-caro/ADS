@@ -10,8 +10,8 @@ namespace MotoShopRacing
 {
     class BD
     {
-        private SqlConnection conexion = new SqlConnection("workstation id=MotoShopRacing.mssql.somee.com;packet size=4096;user id=Bucaro;pwd=gamesalada1;data source=MotoShopRacing.mssql.somee.com;persist security info=False;initial catalog=MotoShopRacing");
-        //private SqlConnection conexion = new SqlConnection("Data Source = BÚCARO; database = MotoShopRacing; Integrated Security = true; user = sa; password = root");
+        //private SqlConnection conexion = new SqlConnection("workstation id=MotoShopRacing.mssql.somee.com;packet size=4096;user id=Bucaro;pwd=gamesalada1;data source=MotoShopRacing.mssql.somee.com;persist security info=False;initial catalog=MotoShopRacing");
+        private SqlConnection conexion = new SqlConnection("Data Source = BÚCARO; database = MotoShopRacing; Integrated Security = true; user = sa; password = root");
 
         private DataSet ds;        
 
