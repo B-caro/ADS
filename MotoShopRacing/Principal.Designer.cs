@@ -80,6 +80,7 @@
             this.btnRegVenta.TabIndex = 2;
             this.btnRegVenta.Text = "Registrar venta";
             this.btnRegVenta.UseVisualStyleBackColor = true;
+            this.btnRegVenta.Click += new System.EventHandler(this.btnRegVenta_Click);
             // 
             // btnRegistar
             // 

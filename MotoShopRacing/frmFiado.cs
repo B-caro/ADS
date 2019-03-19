@@ -12,14 +12,12 @@ using MaterialSkin.Controls;
 
 namespace MotoShopRacing
 {
-    public partial class RegVenta : MaterialForm
+    public partial class frmFiado : MaterialForm
     {
-        BD Sql = new BD();
-
-        public RegVenta()
+        public frmFiado()
         {
             InitializeComponent();
-            // Create a material theme manager and add the form to manage(this)
+            // Create a material theme manager and add the form to manage (this)
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
@@ -28,16 +26,7 @@ namespace MotoShopRacing
             materialSkinManager.ColorScheme = new ColorScheme(
                 Primary.Blue400, Primary.Blue500,
                 Primary.Blue500, Accent.LightBlue200,
-                TextShade.WHITE
-            );
-            dgvVenta.DataSource = Sql.MostrarProductos();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            Principal frmPrin = new Principal();
-            this.Close();
-            frmPrin.Show();
+                TextShade.WHITE);
         }
     }
 }

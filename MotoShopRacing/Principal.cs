@@ -71,14 +71,16 @@ namespace MotoShopRacing
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            dgvPrincipal.DataSource = Sql.Buscar(txtBuscar.Text);
-        }
-
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
             string name = txtBuscar.Text;
             if (txtBuscar.Text != "") dgvPrincipal.DataSource = Sql.BuscarProductos(name);
             else dgvPrincipal.DataSource = Sql.MostrarProductos();
+        }
+
+        private void btnRegVenta_Click(object sender, EventArgs e)
+        {
+            RegVenta frmVenta = new RegVenta();
+            this.Hide();
+            frmVenta.Show();
         }
     }
 }

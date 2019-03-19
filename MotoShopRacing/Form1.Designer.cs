@@ -131,6 +131,7 @@
             this.cbRecordarme.TabIndex = 6;
             this.cbRecordarme.Text = "Recordarme";
             this.cbRecordarme.UseVisualStyleBackColor = true;
+            this.cbRecordarme.CheckedChanged += new System.EventHandler(this.cbRecordarme_CheckedChanged);
             // 
             // frmLogin
             // 

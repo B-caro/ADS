@@ -53,7 +53,7 @@ namespace MotoShopRacing
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            dgvMantenimiento.DataSource = Sql.Buscar(txtBuscar.Text);
+            dgvMantenimiento.DataSource = Sql.BuscarProductos(txtBuscar.Text);
         }
 
         private void EliminarProd_Load(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace MotoShopRacing
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Sql.Actualizar(int.Parse(ProdID), txtNombre.Text, txtMarca.Text, (int)numCant.Value, int.Parse(txtPrecio.Text));
+            Sql.Actualizar(int.Parse(ProdID), txtNombre.Text, txtMarca.Text, (int)numCant.Value, decimal.Parse(txtPrecio.Text));
             MessageBox.Show("Registro actualizado con exito!");
             dgvMantenimiento.DataSource = Sql.MostrarProductos();
         }
