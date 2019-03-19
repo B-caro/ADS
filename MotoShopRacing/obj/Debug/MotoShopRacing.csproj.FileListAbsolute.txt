@@ -42,3 +42,4 @@ C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Princ
 C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.CopyComplete
 >>>>>>> MotoShopRacing
+C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegVenta.resources

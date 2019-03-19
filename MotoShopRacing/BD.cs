@@ -82,7 +82,6 @@ namespace MotoShopRacing
             conexion.Close();
             return ds.Tables["Tabla"];
         }
-<<<<<<< HEAD
 
         public bool Actualizar(int ID, string nombre, string marca, int cantidad, decimal precio)
         {
@@ -102,7 +101,8 @@ namespace MotoShopRacing
             conexion.Close();
             if (FilasModificadas > 0) return true;
             else return false;
-=======
+        }
+
         public DataTable BuscarProductos(string nombre)
         {
             conexion.Open();
@@ -112,7 +112,6 @@ namespace MotoShopRacing
             ad.Fill(ds, "Tablas");
             conexion.Close();
             return ds.Tables["Tablas"];
->>>>>>> MotoShopRacing
         }
     }
 }

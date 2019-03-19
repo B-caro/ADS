@@ -76,6 +76,12 @@
     <Compile Include="RegProductos.Designer.cs">
       <DependentUpon>RegProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegVenta.Designer.cs">
+      <DependentUpon>RegVenta.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EliminarProd.resx">
       <DependentUpon>EliminarProd.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="RegProductos.resx">
       <DependentUpon>RegProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegVenta.resx">
+      <DependentUpon>RegVenta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
