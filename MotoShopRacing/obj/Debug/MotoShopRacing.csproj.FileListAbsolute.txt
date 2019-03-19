@@ -24,4 +24,21 @@ C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.ex
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.pdb
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Principal.resources
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegProductos.resources
+<<<<<<< HEAD
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.EliminarProd.resources
+=======
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.frmLogin.resources
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Properties.Resources.resources
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegProductos.resources
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.exe
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.pdb
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\bin\Debug\MotoShopRacing.exe.config
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\bin\Debug\MotoShopRacing.exe
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\bin\Debug\MotoShopRacing.pdb
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\bin\Debug\MaterialSkin.dll
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Principal.resources
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.CopyComplete
+>>>>>>> MotoShopRacing
