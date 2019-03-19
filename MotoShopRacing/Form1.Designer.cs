@@ -59,7 +59,7 @@
             this.txtPass.Location = new System.Drawing.Point(23, 158);
             this.txtPass.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '*';
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;
             this.txtPass.SelectionStart = 0;
@@ -78,6 +78,7 @@
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // materialDivider1
             // 
@@ -146,6 +147,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

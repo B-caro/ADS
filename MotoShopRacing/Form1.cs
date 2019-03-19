@@ -14,6 +14,8 @@ namespace MotoShopRacing
 {
     public partial class frmLogin : MaterialForm
     {
+        BD Sql = new BD();
+
         public frmLogin()
         {
             InitializeComponent();
@@ -33,6 +35,50 @@ namespace MotoShopRacing
         private void frmLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtUser.Text) && !String.IsNullOrEmpty(txtPass.Text))
+            {
+                try
+                {
+                    Boolean res = Sql.iniciarSesion(txtUser.Text, txtPass.Text);
+                    if (res)
+                    {
+                        Principal p = new Principal();
+                        this.Hide();
+                        p.Show();
+                        Reset();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario no registrado...");
+                    }
+                }
+                catch (Exception x)
+                {
+                    MessageBox.Show(x.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Complete los datos");
+                txtUser.Focus();
+            }
+            //Principal frmPrincipal = new Principal();
+            //this.Hide();
+            //frmPrincipal.Show();
+        }
+
+        public void Reset()
+        {
+            this.Controls.OfType<MaterialSingleLineTextField>().ToList().ForEach(o => o.Text = "");
+        }
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
