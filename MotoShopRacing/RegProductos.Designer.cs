@@ -103,6 +103,7 @@
             this.txtPrecio.Size = new System.Drawing.Size(293, 23);
             this.txtPrecio.TabIndex = 4;
             this.txtPrecio.UseSystemPasswordChar = false;
+            this.txtPrecio.Click += new System.EventHandler(this.txtPrecio_Click);
             // 
             // btnRegistar
             // 

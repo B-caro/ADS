@@ -38,6 +38,7 @@ namespace MotoShopRacing
             {
                 Sql.Insertar(txtNProducto.Text, txtMarca.Text, (int)numCant.Value, double.Parse(txtPrecio.Text));
                 MessageBox.Show("Registro completado con exito!");
+                Reset();
             }
             catch
             {
@@ -48,6 +49,7 @@ namespace MotoShopRacing
         public void Reset()
         {
             this.Controls.OfType<MaterialSingleLineTextField>().ToList().ForEach(o => o.Text = "");
+            numCant.Value = 0;
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -55,6 +57,11 @@ namespace MotoShopRacing
             Principal frmPrincipal = new Principal();
             this.Close();
             frmPrincipal.Show();
+        }
+
+        private void txtPrecio_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

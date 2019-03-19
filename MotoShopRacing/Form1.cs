@@ -49,6 +49,7 @@ namespace MotoShopRacing
                         Principal p = new Principal();
                         this.Hide();
                         p.Show();
+                        Reset();
                     }
                     else
                     {
@@ -68,6 +69,16 @@ namespace MotoShopRacing
             //Principal frmPrincipal = new Principal();
             //this.Hide();
             //frmPrincipal.Show();
+        }
+
+        public void Reset()
+        {
+            this.Controls.OfType<MaterialSingleLineTextField>().ToList().ForEach(o => o.Text = "");
+        }
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

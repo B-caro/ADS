@@ -64,8 +64,14 @@ namespace MotoShopRacing
 
         private void Principal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
-            //Application.Exit();
+            frmLogin frmLog = new frmLogin();
+            this.Hide();
+            frmLog.Show();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            dgvPrincipal.DataSource = Sql.Buscar(txtBuscar.Text);
         }
     }
 }

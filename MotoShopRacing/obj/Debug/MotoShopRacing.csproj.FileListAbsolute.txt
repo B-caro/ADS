@@ -24,3 +24,4 @@ C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.ex
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.pdb
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Principal.resources
 C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegProductos.resources
+C:\Users\Bucaro\Desktop\Proyectos\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.EliminarProd.resources

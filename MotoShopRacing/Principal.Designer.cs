@@ -67,15 +67,16 @@
             this.txtBuscar.Size = new System.Drawing.Size(706, 23);
             this.txtBuscar.TabIndex = 1;
             this.txtBuscar.UseSystemPasswordChar = false;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // btnRegVenta
             // 
             this.btnRegVenta.Depth = 0;
-            this.btnRegVenta.Location = new System.Drawing.Point(560, 153);
+            this.btnRegVenta.Location = new System.Drawing.Point(492, 147);
             this.btnRegVenta.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRegVenta.Name = "btnRegVenta";
             this.btnRegVenta.Primary = true;
-            this.btnRegVenta.Size = new System.Drawing.Size(160, 28);
+            this.btnRegVenta.Size = new System.Drawing.Size(160, 38);
             this.btnRegVenta.TabIndex = 2;
             this.btnRegVenta.Text = "Registrar venta";
             this.btnRegVenta.UseVisualStyleBackColor = true;
@@ -83,11 +84,11 @@
             // btnRegistar
             // 
             this.btnRegistar.Depth = 0;
-            this.btnRegistar.Location = new System.Drawing.Point(560, 82);
+            this.btnRegistar.Location = new System.Drawing.Point(213, 153);
             this.btnRegistar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRegistar.Name = "btnRegistar";
             this.btnRegistar.Primary = true;
-            this.btnRegistar.Size = new System.Drawing.Size(160, 27);
+            this.btnRegistar.Size = new System.Drawing.Size(160, 38);
             this.btnRegistar.TabIndex = 3;
             this.btnRegistar.Text = "Registrar producto";
             this.btnRegistar.UseVisualStyleBackColor = true;
@@ -96,22 +97,22 @@
             // btnEliminar
             // 
             this.btnEliminar.Depth = 0;
-            this.btnEliminar.Location = new System.Drawing.Point(394, 82);
+            this.btnEliminar.Location = new System.Drawing.Point(14, 153);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Primary = true;
-            this.btnEliminar.Size = new System.Drawing.Size(160, 27);
+            this.btnEliminar.Size = new System.Drawing.Size(160, 38);
             this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "Eliminar Producto";
+            this.btnEliminar.Text = "Mantenimeinto productos";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(387, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -119,11 +120,11 @@
             // btnDeudas
             // 
             this.btnDeudas.Depth = 0;
-            this.btnDeudas.Location = new System.Drawing.Point(394, 153);
+            this.btnDeudas.Location = new System.Drawing.Point(492, 81);
             this.btnDeudas.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDeudas.Name = "btnDeudas";
             this.btnDeudas.Primary = true;
-            this.btnDeudas.Size = new System.Drawing.Size(160, 28);
+            this.btnDeudas.Size = new System.Drawing.Size(160, 38);
             this.btnDeudas.TabIndex = 6;
             this.btnDeudas.Text = "Fiado ";
             this.btnDeudas.UseVisualStyleBackColor = true;

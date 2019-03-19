@@ -76,6 +76,9 @@
     <Compile Include="RegProductos.Designer.cs">
       <DependentUpon>RegProductos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EliminarProd.resx">
+      <DependentUpon>EliminarProd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
