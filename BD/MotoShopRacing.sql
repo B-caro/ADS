@@ -20,16 +20,15 @@ CREATE TABLE products(
 	productName VARCHAR(75) NOT NULL,
 	brand VARCHAR(30),
 	quantity INT NOT NULL,
-	price DOUBLE NOT NULL,
+	price Decimal NOT NULL,
 	CONSTRAINT PK_Product PRIMARY KEY (productID) 
 )
 GO
 
 CREATE TABLE linkProdTicket(
-	linkProdTick_ID INT IDENTITY(1,1),
 	productID INT NOT NULL,
 	ticketID INT NOT NULL,
-	CONSTRAINT PL_LinkProdTick PRIMARY KEY (linkProdTick_ID)
+	quantity INT NOT NULL,
 )
 GO
 
@@ -53,19 +52,24 @@ CREATE TABLE clients(
 GO
 
 CREATE TABLE linkClientDebt(
-	linkCD_ID INT IDENTITY(1,1) NOT NULL,
 	clientID INT NOT NULL,
-	debtID INT NOT NULL,
-	CONSTRAINT PK_LinkCD PRIMARY KEY (linkCD_ID)
+	debtID INT NOT NULL
 )
 GO
 
 CREATE TABLE clientsDebts(
 	debtID INT IDENTITY(1,1),
+	productID INT NOT NULL,
 	productName VARCHAR(60) NOT NULL,
 	productPrice INT NOT NULL,
 	CONSTRAINT PK_Debt PRIMARY KEY (debtID)
 )
+GO
+
+ALTER TABLE clientsDebts
+ADD CONSTRAINT FK_LinkProdClient
+FOREIGN KEY (productID)
+REFERENCES products (productID)
 GO
 
 ALTER TABLE linkClientDebt
