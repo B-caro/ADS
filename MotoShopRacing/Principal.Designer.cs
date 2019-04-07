@@ -36,6 +36,7 @@
             this.btnEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDeudas = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnempleados = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrincipal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,36 +48,40 @@
             this.dgvPrincipal.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPrincipal.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             this.dgvPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrincipal.Location = new System.Drawing.Point(13, 239);
+            this.dgvPrincipal.Location = new System.Drawing.Point(17, 294);
+            this.dgvPrincipal.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPrincipal.Name = "dgvPrincipal";
             this.dgvPrincipal.ReadOnly = true;
-            this.dgvPrincipal.Size = new System.Drawing.Size(707, 260);
+            this.dgvPrincipal.Size = new System.Drawing.Size(943, 320);
             this.dgvPrincipal.TabIndex = 0;
             // 
             // txtBuscar
             // 
             this.txtBuscar.Depth = 0;
             this.txtBuscar.Hint = "Buscar producto";
-            this.txtBuscar.Location = new System.Drawing.Point(14, 210);
+            this.txtBuscar.Location = new System.Drawing.Point(19, 258);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtBuscar.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.PasswordChar = '\0';
             this.txtBuscar.SelectedText = "";
             this.txtBuscar.SelectionLength = 0;
             this.txtBuscar.SelectionStart = 0;
-            this.txtBuscar.Size = new System.Drawing.Size(706, 23);
+            this.txtBuscar.Size = new System.Drawing.Size(941, 28);
             this.txtBuscar.TabIndex = 1;
             this.txtBuscar.UseSystemPasswordChar = false;
+            this.txtBuscar.Click += new System.EventHandler(this.txtBuscar_Click);
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // btnRegVenta
             // 
             this.btnRegVenta.Depth = 0;
-            this.btnRegVenta.Location = new System.Drawing.Point(492, 147);
+            this.btnRegVenta.Location = new System.Drawing.Point(656, 164);
+            this.btnRegVenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegVenta.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRegVenta.Name = "btnRegVenta";
             this.btnRegVenta.Primary = true;
-            this.btnRegVenta.Size = new System.Drawing.Size(160, 38);
+            this.btnRegVenta.Size = new System.Drawing.Size(213, 47);
             this.btnRegVenta.TabIndex = 2;
             this.btnRegVenta.Text = "Registrar venta";
             this.btnRegVenta.UseVisualStyleBackColor = true;
@@ -85,11 +90,12 @@
             // btnRegistar
             // 
             this.btnRegistar.Depth = 0;
-            this.btnRegistar.Location = new System.Drawing.Point(213, 153);
+            this.btnRegistar.Location = new System.Drawing.Point(284, 188);
+            this.btnRegistar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRegistar.Name = "btnRegistar";
             this.btnRegistar.Primary = true;
-            this.btnRegistar.Size = new System.Drawing.Size(160, 38);
+            this.btnRegistar.Size = new System.Drawing.Size(213, 47);
             this.btnRegistar.TabIndex = 3;
             this.btnRegistar.Text = "Registrar producto";
             this.btnRegistar.UseVisualStyleBackColor = true;
@@ -98,11 +104,12 @@
             // btnEliminar
             // 
             this.btnEliminar.Depth = 0;
-            this.btnEliminar.Location = new System.Drawing.Point(14, 153);
+            this.btnEliminar.Location = new System.Drawing.Point(19, 188);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Primary = true;
-            this.btnEliminar.Size = new System.Drawing.Size(160, 38);
+            this.btnEliminar.Size = new System.Drawing.Size(213, 47);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Mantenimeinto productos";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -111,9 +118,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 80);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(387, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(516, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -121,20 +129,37 @@
             // btnDeudas
             // 
             this.btnDeudas.Depth = 0;
-            this.btnDeudas.Location = new System.Drawing.Point(492, 81);
+            this.btnDeudas.Location = new System.Drawing.Point(656, 100);
+            this.btnDeudas.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeudas.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnDeudas.Name = "btnDeudas";
             this.btnDeudas.Primary = true;
-            this.btnDeudas.Size = new System.Drawing.Size(160, 38);
+            this.btnDeudas.Size = new System.Drawing.Size(213, 47);
             this.btnDeudas.TabIndex = 6;
             this.btnDeudas.Text = "Fiado ";
             this.btnDeudas.UseVisualStyleBackColor = true;
+            this.btnDeudas.Click += new System.EventHandler(this.btnDeudas_Click);
+            // 
+            // btnempleados
+            // 
+            this.btnempleados.Depth = 0;
+            this.btnempleados.Location = new System.Drawing.Point(656, 219);
+            this.btnempleados.Margin = new System.Windows.Forms.Padding(4);
+            this.btnempleados.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnempleados.Name = "btnempleados";
+            this.btnempleados.Primary = true;
+            this.btnempleados.Size = new System.Drawing.Size(213, 47);
+            this.btnempleados.TabIndex = 7;
+            this.btnempleados.Text = "Empleados";
+            this.btnempleados.UseVisualStyleBackColor = true;
+            this.btnempleados.Click += new System.EventHandler(this.btnempleados_Click);
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 511);
+            this.ClientSize = new System.Drawing.Size(976, 629);
+            this.Controls.Add(this.btnempleados);
             this.Controls.Add(this.btnDeudas);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnEliminar);
@@ -142,6 +167,7 @@
             this.Controls.Add(this.btnRegVenta);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dgvPrincipal);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
@@ -162,5 +188,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnEliminar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialRaisedButton btnDeudas;
+        private MaterialSkin.Controls.MaterialRaisedButton btnempleados;
     }
 }

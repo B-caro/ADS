@@ -82,5 +82,22 @@ namespace MotoShopRacing
             this.Hide();
             frmVenta.Show();
         }
+
+        private void btnDeudas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnempleados_Click(object sender, EventArgs e)
+        {
+            empleados frmempleados = new empleados();
+            this.Hide();
+            frmempleados.Show();
+        }
+
+        private void txtBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

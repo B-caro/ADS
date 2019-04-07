@@ -32,3 +32,18 @@ C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.cspro
 C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.exe
 C:\Users\DELL\Documents\GitHub\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.pdb
 >>>>>>> MotoShopRacing
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\bin\Debug\MotoShopRacing.exe.config
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.exe
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.pdb
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csprojResolveAssemblyReference.cache
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.EliminarProd.resources
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.frmLogin.resources
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Principal.resources
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.Properties.Resources.resources
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegProductos.resources
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.RegVenta.resources
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.csproj.GenerateResource.Cache
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\bin\Debug\MotoShopRacing.exe
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\bin\Debug\MotoShopRacing.pdb
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\bin\Debug\MaterialSkin.dll
+C:\Users\mauri\Desktop\ciclo 1 2019\ADS\ADS\MotoShopRacing\obj\Debug\MotoShopRacing.empleados.resources
