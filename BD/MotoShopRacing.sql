@@ -20,7 +20,7 @@ CREATE TABLE products(
 	productName VARCHAR(75) NOT NULL,
 	brand VARCHAR(30),
 	quantity INT NOT NULL,
-	price DOUBLE NOT NULL,
+	price FLOAT NOT NULL,
 	CONSTRAINT PK_Product PRIMARY KEY (productID) 
 )
 GO
@@ -63,7 +63,7 @@ GO
 CREATE TABLE clientsDebts(
 	debtID INT IDENTITY(1,1),
 	productName VARCHAR(60) NOT NULL,
-	productPrice INT NOT NULL,
+	productPrice FLOAT NOT NULL,
 	CONSTRAINT PK_Debt PRIMARY KEY (debtID)
 )
 GO
