@@ -205,6 +205,7 @@
             this.btnmenu.TabIndex = 12;
             this.btnmenu.Text = "Menu";
             this.btnmenu.UseVisualStyleBackColor = true;
+            this.btnmenu.Click += new System.EventHandler(this.btnmenu_Click);
             // 
             // empleados
             // 

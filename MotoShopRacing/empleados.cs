@@ -20,6 +20,8 @@ namespace MotoShopRacing
 
         int rol = 0;
 
+       public bool role;
+
         public empleados()
         {
             InitializeComponent();
@@ -74,6 +76,8 @@ namespace MotoShopRacing
                             Sql.Insertar_Empleado(txtname.Text,txtsname.Text,txtapellidos.Text,1,txtpass.Text);
                             MessageBox.Show("Registro completado con exito!");
                             Reset();
+                            dgvempleados.DataSource = Sql.MostrarEmpleados();
+                           
                         }
                         catch
                         {
@@ -117,26 +121,50 @@ namespace MotoShopRacing
 
         private void btneliminat_Click(object sender, EventArgs e)
         {
-            Sql.Eliminar_empleados(userID);
-            MessageBox.Show("Registro eliminado con exito!");
-            dgvempleados.DataSource = Sql.MostrarEmpleados();
 
-            txtname.Clear();
-            txtsname.Clear();
-            txtapellidos.Clear();
-            cbrol.Text = "";
-            txtpass.Clear();
+            
 
+            if (role== true)
+            {
+                MessageBox.Show("El administrador no se puede eliminar");
+
+            }
+
+            else
+            {
+
+                
+                MessageBox.Show("Registro eliminado con exito!");
+                dgvempleados.DataSource = Sql.MostrarEmpleados();
+
+                txtname.Clear();
+                txtsname.Clear();
+                txtapellidos.Clear();
+                cbrol.Text = "";
+                txtpass.Clear();
+            }
         }
 
         private void dgvempleados_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+    
             DataGridViewRow fila = dgvempleados.Rows[e.RowIndex];
             userID = Convert.ToString(fila.Cells[0].Value);
             txtname.Text = Convert.ToString( fila.Cells[1].Value);
             txtsname.Text = Convert.ToString(fila.Cells[2].Value);
             txtapellidos.Text = Convert.ToString(fila.Cells[3].Value);
-            cbrol.Text = Convert.ToString(fila.Cells[4].Value);
+            role = Convert.ToBoolean(fila.Cells[4].Value);
+
+            if (role == true)
+            {
+                cbrol.Text = "Administrador";
+            }
+
+            else 
+            {
+                cbrol.Text = "Vendedor";
+            }
+
             txtpass.Text = Convert.ToString(fila.Cells[5].Value);
 
         }
@@ -163,6 +191,13 @@ namespace MotoShopRacing
                 dgvempleados.DataSource = Sql.MostrarEmpleados();
             }
 
+        }
+
+        private void btnmenu_Click(object sender, EventArgs e)
+        {
+            Principal frmprincial = new Principal();
+            frmprincial.Show();
+            this.Close();
         }
 
 
